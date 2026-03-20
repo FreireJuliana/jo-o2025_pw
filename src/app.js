@@ -7,17 +7,11 @@ app.get("/", (request, response) => {
     response.send("CORINTHIANS")
 })
 
-//app.use(express.json())
+app.use(express.json())
+
+app.post("/users", userController.createUser)
+app.get("/users", userController.getAllUsers)
 
 
-
-app.post("/users",(req, res) => {
-
-console.log(req)
-    res.send("estamos testando ")
-})
-
-
-app.get("/users",userController.getAllUsers )
 
 module.exports = app 
