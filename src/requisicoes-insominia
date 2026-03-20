@@ -1,0 +1,123 @@
+type: collection.insomnia.rest/5.0
+schema_version: "5.1"
+name: Scratch Pad
+meta:
+  id: wrk_43c8e1ece7d848ac95f0d4a6fe12f507
+  created: 1773962281348
+  modified: 1773962281348
+  description: ""
+collection:
+  - url: localhost:3000
+    name: testa api
+    meta:
+      id: req_7b194f941b0441d287bf41615580c858
+      created: 1773959361959
+      modified: 1773959738922
+      isPrivate: false
+      description: ""
+      sortKey: -1773959361959
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000
+    name: New Request
+    meta:
+      id: req_fa01fe15a9b64bae9159b77105d8775d
+      created: 1773959844760
+      modified: 1773959859830
+      isPrivate: false
+      description: ""
+      sortKey: -1773959844760
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users
+    name: lista usuários
+    meta:
+      id: req_78a4ca9aa5ab4f6f95d658d31d24ba88
+      created: 1773960291080
+      modified: 1773960340020
+      isPrivate: false
+      description: ""
+      sortKey: -1773960291080
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users
+    name: cadastra usuário
+    meta:
+      id: req_65f6eff1ab7f4f41a4e7480d22b3f1a1
+      created: 1773960387235
+      modified: 1773967236715
+      isPrivate: false
+      description: ""
+      sortKey: -1773960387235
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "Marcelo",
+        	"age" : 12
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+cookieJar:
+  name: Default Jar
+  meta:
+    id: jar_a3364e4a219846c2ac7d2d98e7d98349
+    created: 1773959817472
+    modified: 1773959817472
+environments:
+  name: Base Environment
+  meta:
+    id: env_21284b47ce89458c98e8f5627d177682
+    created: 1773959817463
+    modified: 1773959817463
+    isPrivate: false
