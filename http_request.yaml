@@ -8,14 +8,92 @@ meta:
   description: ""
 collection:
   - url: localhost:3000
-    name: New Request
+    name: Testa a API
     meta:
-      id: req_65ada0d7d7a1418b90f0a64f56341c36
-      created: 1773959844760
-      modified: 1773959859830
+      id: req_35a257a80e5142c4a331bc90d71acd61
+      created: 1773959363244
+      modified: 1773959444430
       isPrivate: false
       description: ""
-      sortKey: -1773959844760
+      sortKey: -1773959363244
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users
+    name: "lista usuários "
+    meta:
+      id: req_a315ef56ec6f451e824f5a73e7b93c05
+      created: 1773960279832
+      modified: 1773960351764
+      isPrivate: false
+      description: ""
+      sortKey: -1773960279832
+    method: GET
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users
+    name: "cadastra usuários "
+    meta:
+      id: req_3b17ace3333b497fa848341190d8aa90
+      created: 1773960363068
+      modified: 1773966695017
+      isPrivate: false
+      description: ""
+      sortKey: -1773960363068
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+         "name": "Vitor",
+        	"age"  : "18"
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/user/1774572607778
+    name: busca usuarios por id
+    meta:
+      id: req_bcd75fcb3d4246d0aa238b512f320a91
+      created: 1774570495333
+      modified: 1774572631342
+      isPrivate: false
+      description: ""
+      sortKey: -1774570495333
     method: GET
     headers:
       - name: User-Agent
@@ -34,12 +112,12 @@ cookieJar:
   name: Default Jar
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1773959817472
-    modified: 1773959817472
+    created: 1774562669920
+    modified: 1774562669920
 environments:
   name: Base Environment
   meta:
     id: env_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1773959817463
-    modified: 1773959817463
+    created: 1774562669916
+    modified: 1774562669916
     isPrivate: false

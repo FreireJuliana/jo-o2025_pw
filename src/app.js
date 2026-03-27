@@ -10,8 +10,10 @@ app.get("/", (request, response) => {
 app.use(express.json())
 
 app.post("/users", userController.createUser)
+
 app.get("/users", userController.getAllUsers)
 
+app.get("/user/:id", userController.getUserById) 
 
 
 module.exports = app 
